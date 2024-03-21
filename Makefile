@@ -5,7 +5,7 @@ SOURCES := $(wildcard $(SRC)/*.jemdoc)
 HTMLS := $(patsubst $(SRC)/%.jemdoc, $(HTML)/%.html, $(SOURCES))
 
 .PHONY: build
-build: src/timetable_table.html $(HTMLS) MENU $(HTML)/jemdoc.css .htaccess_html 
+build: src/timetable_table.html $(HTMLS) $(HTML)/jemdoc.css .htaccess_html 
 	cp -Rf images/ html/images
 	cp .htaccess_html html/.htaccess
 
@@ -16,10 +16,10 @@ src/timetable_table.html: src/timetable.yaml src/timetable.py src/timetable_tabl
 	python3 src/timetable.py src/timetable.yaml > src/timetable_table.html
 
 $(HTML)/index.html: src/index.jemdoc src/timetable_table.html
-	./jemdoc.py -o $@ $<	
+	python2.7 jemdoc.py -o $@ $<	
 
-$(HTML)/%.html: $(SRC)/%.jemdoc MENU
-	./jemdoc.py -o $@ $<
+# $(HTML)/%.html: $(SRC)/%.jemdoc MENU
+# 	python2.7 jemdoc.py -o $@ $<
 
 .PHONY: deploy
 deploy:

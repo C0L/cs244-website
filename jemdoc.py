@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """jemdoc version 0.7.3, 2012-11-27."""
 
 # Copyright (C) 2007-2012 Jacob Mattingley (jacobm@stanford.edu).
@@ -40,7 +38,7 @@ def info():
     print 'yes.'
   else:
     print 'no.'
-  print message
+  print (message)
 
 def testeqsupport():
   supported = True

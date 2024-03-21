@@ -1,20 +1,16 @@
-- date: 4/7/2020
-  title: Introduction
-  speakers: Sachin and Nick
-  slides: slides/CS244 Lecture_01_2020.pdf
+- date: 4/2/2024
+  title: Introductions
+  speakers: Keith and Phil
+  slides:
   papers:
-    - authors: S. Keshav
-      title: How to Read a Paper
-      url: papers/HowtoReadPaper.pdf
-      optional: true
   due:
     
-- date: 4/9/2020
-  title: Architecture and Principles
-  speakers: Sachin
-  slides: slides/Lecture_02_2020.pdf
+- date: 4/4/2024
+  title: Internet Architecture
+  speakers: Keith and Phil
+  slides:
   papers:
-    - authors: D. D. Clark
+    - authors: D. Clark
       title: The Design Philosophy of the DARPA Internet Protocols
       url: papers/DesignPhilosophyDARPA.pdf
       venue: SIGCOMM 1988
@@ -23,258 +19,775 @@
       title: A Brief History of the Internet
       url: http://www.isoc.org/internet/history/brief.shtml
       venue:
-      optional: true
-    - authors: P. Baran
-      title: On Distributed Communications Networks
-      url: papers/DistributedCommunicationsNetworks.pdf
-      venue: IEEE Trans. Communications, 1964
-      optional: true
+      optional: false 
   due:
-    - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> released, due Monday, April 27 at 5pm
+  #  - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> released, due Monday, April 27 at 5pm
     
-- date: 4/14/2020
-  title: Architecture and Principles
-  speakers: Sachin
-  slides: slides/Lecture_03_2020.pdf
+- date: 4/9/2024
+  title: End-to-End
+  speakers: Keith and Phil
+  slides:
   papers:
-    - authors: J. H. Saltzer, D. P. Reed, D. D. Clark
+    - authors: J. Saltzer, D. Reed, D. Clark
       title: End-to-End Arguments in System Design
       url: papers/End2EndSystemDesign.pdf
       venue: Distributed Computing Systems, 1981.
       optional: false
+    - authors:
+      title: RFC 1958
+      url: https://datatracker.ietf.org/doc/html/rfc1958
+      venue: 
+      optional: false
   due:
-
     
-- date: 4/16/2020
-  title: Congestion Control
-  speakers: Nick
-  slides: slides/Lecture_04_2020.pdf
-  papers:
-    - authors: V. Jacobson and M. J. Karels
-      url: papers/CongestionControl.pdf
-      title: Congestion Avoidance and Control
-      venue: SIGCOMM 1988
-      optional: false
-    - authors: B. Briscoe
-      url: papers/fair-ccr2007.pdf
-      title: "Flow Rate Fairness: Dismantling a Religion"
-      venue: SIGCOMM CCR 2007
-      optional: true
-  due:
-
-- date: 4/21/2020
-  title: Congestion Control II
-  speakers: Keith Winstein
-  slides: slides/Lecture_05_2020.pdf
-  papers:
-    - authors: F. Yan, J. Ma, G. Hill, D. Raghavan, R. Wahby, P. Levis, K. Winstein
-      url: https://www.usenix.org/system/files/conference/atc18/atc18-yan-francis.pdf
-      title: "Pantheon: the training ground for Internet congestion-control research"
-      venue: USENIX ATC 2018
-      optional: false
-    - authors: M. Schapira and K. Winstein
-      url: papers/hotnets17-congestion-control-throwdown.pdf
-      title: Congestion-Control Throwdown
-      venue: ACM HotNets 2017
-      optional: false
-  due:
-
-- date: 4/23/2020
-  title: Switching
-  speakers: Nick
+- date: 4/11/2024
+  title: Switches (Scheduling and Buffering)
+  speakers: Phil
   slides:
-    - url: slides/Lecture_06_2020.pptx
-      text: Slides (ppt)
-    - url: slides/Lecture_06_2020.pdf
-      text: Slides (pdf)
   papers:
-    - authors: T. Anderson et al.
+    - authors: Anderson et al.
+      title: High-Speed Switch Scheduling for Local-Area Networks
       url: papers/HighSpeedSwitchScheduling.pdf
-      title: High-speed Switch Scheduling for Local-area Networks
-      venue: ACM Trans. Computer Systems, 1993
+      venue: ACM Transactions on Computer Systems
+      optional: false
+    - authors: G. Appenzeller et al.
+      title: Sizing Router Buffers
+      url: papers/SizingRouterBuffersAppenzeller.pdf
+      venue: SIGCOMM 2004
       optional: false
   due:
-    - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> due next Monday, April 27 at 5pm
 
-- date: 4/28/2020
-  title: Programmable Forwarding
-  speakers: Nick
+- date: 4/16/2024
+  title: WAN and LAN
+  speakers: Phil
   slides:
-    - url: slides/Lecture_07_2020.pptx
-      text: Slides (ppt)
-    - url: slides/Lecture_07_2020.pdf
-      text: Slides (pdf)
   papers:
-    - authors: Bosshart et al.
-      url: papers/sdn-chip-sigcomm-2013.pdf
-      title: "Forwarding metamorphosis: fast programmable match-action processing in hardware for SDN"
+    - authors: Casado et al.
+      title: "Ethane: Taking Control of the Enterprise"
+      url: papers/Ethane.pdf
+      venue: SIGCOMM 2007
+      optional: false
+    - authors: Firestone
+      title: "VFP: A Virtual Switch Platform for Host SDN in the Public Cloud"
+      url: papers/nsdi17-firestone.pdf
+      venue: NSDI 2017
+      optional: false
+    - authors: Jain et al.
+      title: "B4: Experience with a Globally-Deployed Software Defined WAN"
+      url: papers/b4-sigcomm13.pdf
       venue: SIGCOMM 2013
       optional: false
   due:
 
-- date: 4/30/2020
-  title: SDN
-  speakers: Nick
+- date: 4/18/2024
+  title: Programs and Programmability
+  speakers: Phil
   slides:
-    - url: slides/Lecture_08_2020.pptx
-      text: Slides (ppt)
-    - url: slides/Lecture_08_2020.pdf
-      text: Slides (pdf)
   papers:
-    - authors: N. McKeown, T. Anderson, H. Balakrishnan, G. Parulkar, L. Peterson, J. Rexford, S. Shenker, J. Turner
-      url: papers/openflow.pdf
-      title: "OpenFlow: Enabling Innovation in Campus Networks"
-      venue: ACM CCR April 2008
+    - authors:
+      title: TBD
+      url:
+      venue:
       optional: false
-    - authors: M. Casado, M. Freedman, J. Pettit, J. Luo, N. McKeown, S. Shenker
-      url: papers/Ethane.pdf
-      title: "Ethane: Taking Control of the Enterprise"
-      venue: SIGCOMM 2007
+    - authors:
+      title: TBD
+      url:
+      venue:
       optional: false
-  due:    
-    - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Final project proposal</a> due next Monday, May 4th at 11:59pm
+  due:
 
-- date: 5/5/2020
-  title: SDN II
-  speakers: Nick
+- date: 4/23/2024
+  title: Datacenter Networks
+  speakers: Keith + Omid
   slides:
-    - url: slides/Lecture_09_2020.pptx
-      text: Slides (ppt)
-    - url: slides/Lecture_09_2020.pdf
-      text: Slides (pdf)
   papers:
-    - authors: Koponen et al.
-      url: papers/network-virtualization-koponen-nsdi14.pdf
-      title: Network Virtualization in Multi-tenant Datacenters
-      venue: NSDI 2014
+    - authors: Al-Fares et al.
+      title: A Scalable, Commodity Data Center Network Architecture
+      url: papers/al-fares-sigcomm08.pdf
+      venue: SIGCOMM 2008
       optional: false
-    - authors: M. Casado, N. McKeown, S. Shenker
-      title: From Ethane to SDN and Beyond
-      url: papers/ethane_to_sdn_and_beyond.pdf
-      venue: CCR 2019
-      optional: true
+    - authors: Poutievski et al.
+      title: "Jupiter Evolving: Transforming Google's Datacenter Network via Optical Circuit Switches and Software-Defined Networking"
+      url: papers/poutievski-sigcomm22.pdf
+      venue: SIGCOMM 2022
+      optional: false
   due:
 
-- date: 5/7/2020
-  title: Buffer Sizing
-  speakers: Nick
+- date: 4/25/2024
+  title: Congestion Control
+  speakers: Keith
   slides:
-    - url: slides/Lecture_10_2020.pptx
-      text: Slides (ppt)
-    - url: slides/Lecture_10_2020.pdf
-      text: Slides (pdf)
   papers:
-    - authors: G. Appenzeller et al.
-      url: papers/SizingRouterBuffersAppenzeller.pdf
-      title: Sizing Router Buffers
-      venue: SIGCOMM 2004
+    - authors: Jacobson and Karels
+      title: Congestion Avoidance and Control 
+      url: papers/CongestionControl.pdf
+      venue: 
       optional: false
-    - authors: McKeown et al.
-      url: papers/sizing-router-buffers-redux.pdf
-      title: Sizing Router Buffers (Redux)
-      venue: CCR 2019
+    - authors:
+      title: TBD
+      url:
+      venue:
       optional: false
   due:
 
-- date: 5/12/2020
-  title: Security
-  speakers: Zakir Durumeric
-  slides: slides/Lecture_11_2020.pdf
+- date: 4/30/2024
+  title: Delay-based Congestion Control
+  speakers: Keith
+  slides:
   papers:
-    - authors: Nick Sullivan
-      url: https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/
-      title: A Detailed Look at RFC 8446 (a.k.a. TLS 1.3)
+    - authors: 
+      title: TCP Vegas
+      url:
+      venue: 
       optional: false
-    - authors: Adrian et al.
-      url: papers/imperfect-forward-secrecy-ccs15.pdf
-      title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
-      venue: CCS 2015
-      optional: false
-  due:
-
-- date: 5/14/2020
-  title: Edge Networking
-  speakers: Sachin
-  papers:
-    - authors: K.K. Yap et al.
-      url: papers/espresso.pdf
-      title: "Taking the Edge off with Espresso: Scale, Reliability and Programmability for Global Internet Peering"
-      venue: SIGCOMM 2017
+    - authors: 
+      title: LEDBAT
+      url:
+      venue:
       optional: false
   due:
 
-- date: 5/19/2020
-  title: Midterm
-  speakers:
+- date: 5/2/2024
+  title: Delay-based Problems
+  speakers: Keith
+  slides:
   papers:
+    - authors: 
+      title: BBR
+      url:
+      venue: 
+      optional: false
+    - authors: Arun et al.
+      title: Venkat Starvation
+      url:
+      venue: SIGCOMM 2022
+      optional: false
   due:
-    
-- date: 5/21/2020
-  title: Data centers
-  speakers: Arjun Singh
+
+- date: 5/7/2024
+  title: Measurement and Monitoring
+  speakers: Phil + Zakir
+  slides:
   papers:
-    - authors: Singh et al.
-      url: https://research.google/pubs/pub43837.pdf
-      title: "Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google's Datacenter Network"
+    - authors: Paxson and Floyd
+      title: "Wide area traffic: the failure of Poisson modeling"
+      url:
+      venue: IEE/ACM Transactions on Networking
+      optional: false
+    - authors: Durumeric at al.
+      title: "ZMap: Fast Internet-wide Scanning and Its Security Applications"
+      url:
+      venue:
+      optional: false
+  due:
+
+- date: 5/9/2024
+  title: Internet Governance
+  speakers: Phil + Jon Peterson
+  slides:
+  papers: TBD
+  due:
+
+- date: 5/14/2024
+  title: Surveillance and Privacy
+  speakers: Keith
+  slides:
+  papers:
+    - authors: Ensafi et al.
+      title: Examining How the Great Firewall Discovers Hidden Circumvention Servers
+      url:
+      venue: IMC 2015
+      optional: false
+    - authors: Burnett and Feamster
+      title: "Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests"
+      url:
       venue: SIGCOMM 2015
       optional: false
-  due:    
-    - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Intermediate progress report</a> due tomorrow Friday, May 22nd at 11:59pm
+    - authors: Wu et al.
+      title: How the Great Firewall of China Detects and Blocks Fully Encrypted Traffic
+      url:
+      venue: USENIX Security 2023
+      optional: false
+  due:
 
-    
-- date: 5/26/2020
-  title: Wireless
-  speakers: Sachin
+- date: 5/16/2024
+  title: NIC/Host Interfaces
+  speakers: Phil
+  slides:
   papers:
-    - authors: J. Bicket, D. Aguayo, S. Biswas, R. Morris
+    - authors: Neugebauer et al.
+      title: (Selected sections of) Understanding PCIe performance for end host networking 
+      url: papers/neugebauer-sigcomm18.pdf
+      venue: SIGCOMM 2018
+      optional: false
+    - authors: Sadok et al.
+      title: "Ensō: A Streaming Interface for NIC-Application Communication"
+      url: papers/osdi-sadok.pdf
+      venue: OSDI 2023
+      optional: false
+    - authors: Schuh et al.
+      title: "CC-NIC: a Cache-Coherent Interface to the NIC"
+      url: 
+      venue: ASPLOS 2024
+      optional: false
+  due:
+
+- date: 5/21/2024
+  title: Wireless
+  speakers: Phil
+  slides:
+  papers:
+    - authors: Bicket et al.
+      title: Architecture and Evaluation of an Unplanned 802.11b Mesh Network
       url: papers/roofnet.pdf
-      title: "Architecture and Evaluation of an Unplanned 802.11b Mesh Network"
       venue: MobiCom 2005
       optional: false
-  due:
-    
-- date: 5/28/2020
-  title: Wireless II
-  speakers: Sachin
-  papers:
-    - authors: S. Hong, J. Mehlman, S. Katti
-      url: https://web.stanford.edu/~skatti/pubs/sigcomm12-picasso.pdf
-      title: "Picasso: Flexible RF and Spectrum Slicing"
-      venue: SIGCOMM 2012
+    - authors: Adib and Katabi
+      title: See through walls with WiFi!
+      url: papers/adib-sigcomm13.pdf
+      venue: SIGCOMM 2013
       optional: false
   due:
-    
-- date: 6/2/2020
+
+- date: 5/23/2024
+  title: Simulation
+  speakers: Keith
+  slides:
+  papers:
+    - authors: Floyd and Paxson
+      title: Why We Don't Know How To Simulate The Internet
+      url: papers/paxson-wintersimulation.pdf
+      venue: Winter Simulation Conference 1997
+      optional: false
+    - authors: Yan et al.
+      title: "Pantheon: the training ground for Internet congestion-control research"
+      url: papers/atc18-yan-francis.pdf
+      venue: ATC 2018
+      optional: false
+  due:
+
+- date: 5/28/2024
   title: ML for Networking
-  speakers: Mohammad Alizadeh
-  papers:
-    - authors: H. Mao, M. Schwarzkopf, S.B. Venkatakrishnan, Z. Meng, M. Alizadeh
-      url: https://web.mit.edu/decima/content/sigcomm-2019.pdf
-      title: Learning Scheduling Algorithms for Data Processing Clusters
-      venue: SIGCOMM 2019
-      optional: false
+  speakers: Keith
+  slides:
+  papers: 
+    - authors: 
+      title: TBA
+      url: 
+      venue: 
+      optional: 
   due:
-    
-- date: 6/4/2020
-  title: Video Streaming
-  speakers: TY Huang
+
+- date: 5/30/2024
+  title: ML for Networking
+  speakers: Keith
+  slides:
   papers:
-    - authors: TY Huang, R. Johari, N. McKeown, M. Trunnell, M. Watson
-      url: papers/sigcomm2014-video.pdf
-      title: "A Buffer-Based Approach to Rate Adaptation: Evidence from a Large Video Streaming Service"
-      venue: SIGCOMM 2014
-      optional: false
+    - authors: 
+      title: TBA
+      url: 
+      venue: 
+      optional: 
   due:
-    
-- date: 6/9/2020
-  title: Final Project Presentations
-  speakers: You!
+
+- date: 6/4/2024
+  title: Final Projects (No Class)
+  speakers: 
+  slides:
   papers:
   due:
-    
-- date: 6/11/2020
-  title: Final reports due (no class)
-  speakers:
+
+- date: 6/6/2024
+  title: Final Projects (No Class)
+  speakers: 
+  slides:
   papers:
-  due:    
-    - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Final report</a> due at 5pm
+  due:
+
+#     - authors: V. Jacobson and M. J. Karels
+#       url: papers/CongestionControl.pdf
+#       title: Congestion Avoidance and Control
+#       venue: SIGCOMM 1988
+#       optional: false
+#     - authors: B. Briscoe
+#       url: papers/fair-ccr2007.pdf
+#       title: "Flow Rate Fairness: Dismantling a Religion"
+#       venue: SIGCOMM CCR 2007
+#       optional: true
+#   due:
+# 
+# - date: 4/21/2020
+#   title: Congestion Control II
+#   speakers: Keith Winstein
+#   slides: slides/Lecture_05_2020.pdf
+#   papers:
+#     - authors: F. Yan, J. Ma, G. Hill, D. Raghavan, R. Wahby, P. Levis, K. Winstein
+#       url: https://www.usenix.org/system/files/conference/atc18/atc18-yan-francis.pdf
+#       title: "Pantheon: the training ground for Internet congestion-control research"
+#       venue: USENIX ATC 2018
+#       optional: false
+#     - authors: M. Schapira and K. Winstein
+#       url: papers/hotnets17-congestion-control-throwdown.pdf
+#       title: Congestion-Control Throwdown
+#       venue: ACM HotNets 2017
+#       optional: false
+#   due:
+
+# - date: 4/23/2020
+#   title: Switching
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_06_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_06_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: T. Anderson et al.
+#       url: papers/HighSpeedSwitchScheduling.pdf
+#       title: High-speed Switch Scheduling for Local-area Networks
+#       venue: ACM Trans. Computer Systems, 1993
+#       optional: false
+#   due:
+#     - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> due next Monday, April 27 at 5pm
+# 
+# - date: 4/28/2020
+#   title: Programmable Forwarding
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_07_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_07_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: Bosshart et al.
+#       url: papers/sdn-chip-sigcomm-2013.pdf
+#       title: "Forwarding metamorphosis: fast programmable match-action processing in hardware for SDN"
+#       venue: SIGCOMM 2013
+#       optional: false
+#   due:
+
+# - date: 4/30/2020
+#   title: SDN
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_08_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_08_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: N. McKeown, T. Anderson, H. Balakrishnan, G. Parulkar, L. Peterson, J. Rexford, S. Shenker, J. Turner
+#       url: papers/openflow.pdf
+#       title: "OpenFlow: Enabling Innovation in Campus Networks"
+#       venue: ACM CCR April 2008
+#       optional: false
+#     - authors: M. Casado, M. Freedman, J. Pettit, J. Luo, N. McKeown, S. Shenker
+#       url: papers/Ethane.pdf
+#       title: "Ethane: Taking Control of the Enterprise"
+#       venue: SIGCOMM 2007
+#       optional: false
+#   due:    
+#     - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Final project proposal</a> due next Monday, May 4th at 11:59pm
+# 
+# - date: 5/5/2020
+#   title: SDN II
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_09_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_09_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: Koponen et al.
+#       url: papers/network-virtualization-koponen-nsdi14.pdf
+#       title: Network Virtualization in Multi-tenant Datacenters
+#       venue: NSDI 2014
+#       optional: false
+#     - authors: M. Casado, N. McKeown, S. Shenker
+#       title: From Ethane to SDN and Beyond
+#       url: papers/ethane_to_sdn_and_beyond.pdf
+#       venue: CCR 2019
+#       optional: true
+#   due:
+# - date: 5/12/2020
+#   title: Security
+#   speakers: Zakir Durumeric
+#   slides: slides/Lecture_11_2020.pdf
+#   papers:
+#     - authors: Nick Sullivan
+#       url: https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/
+#       title: A Detailed Look at RFC 8446 (a.k.a. TLS 1.3)
+#       optional: false
+#     - authors: Adrian et al.
+#       url: papers/imperfect-forward-secrecy-ccs15.pdf
+#       title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
+#       venue: CCS 2015
+#       optional: false
+#   due:
+# 
+# - date: 5/14/2020
+#   title: Edge Networking
+#   speakers: Sachin
+#   papers:
+#     - authors: K.K. Yap et al.
+#       url: papers/espresso.pdf
+#       title: "Taking the Edge off with Espresso: Scale, Reliability and Programmability for Global Internet Peering"
+#       venue: SIGCOMM 2017
+#       optional: false
+#   due:
+# 
+# - date: 5/19/2020
+#   title: Midterm
+#   speakers:
+#   papers:
+#   due:
+#     
+# - date: 5/21/2020
+#   title: Data centers
+#   speakers: Arjun Singh
+#   papers:
+#     - authors: Singh et al.
+#       url: https://research.google/pubs/pub43837.pdf
+#       title: "Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google's Datacenter Network"
+#       venue: SIGCOMM 2015
+#       optional: false
+#   due:    
+#     - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Intermediate progress report</a> due tomorrow Friday, May 22nd at 11:59pm
+# 
+#     
+# - date: 5/26/2020
+#   title: Wireless
+#   speakers: Sachin
+#   papers:
+#     - authors: J. Bicket, D. Aguayo, S. Biswas, R. Morris
+#       url: papers/roofnet.pdf
+#       title: "Architecture and Evaluation of an Unplanned 802.11b Mesh Network"
+#       venue: MobiCom 2005
+#       optional: false
+#   due:
+#     
+# - date: 5/28/2020
+#   title: Wireless II
+#   speakers: Sachin
+#   papers:
+#     - authors: S. Hong, J. Mehlman, S. Katti
+#       url: https://web.stanford.edu/~skatti/pubs/sigcomm12-picasso.pdf
+#       title: "Picasso: Flexible RF and Spectrum Slicing"
+#       venue: SIGCOMM 2012
+#       optional: false
+#   due:
+#     
+# - date: 6/2/2020
+#   title: ML for Networking
+#   speakers: Mohammad Alizadeh
+#   papers:
+#     - authors: H. Mao, M. Schwarzkopf, S.B. Venkatakrishnan, Z. Meng, M. Alizadeh
+#       url: https://web.mit.edu/decima/content/sigcomm-2019.pdf
+#       title: Learning Scheduling Algorithms for Data Processing Clusters
+#       venue: SIGCOMM 2019
+#       optional: false
+#   due:
+#     
+# - date: 6/4/2020
+#   title: Video Streaming
+#   speakers: TY Huang
+#   papers:
+#     - authors: TY Huang, R. Johari, N. McKeown, M. Trunnell, M. Watson
+#       url: papers/sigcomm2014-video.pdf
+#       title: "A Buffer-Based Approach to Rate Adaptation: Evidence from a Large Video Streaming Service"
+#       venue: SIGCOMM 2014
+#       optional: false
+#   due:
+#     
+# - date: 6/9/2020
+#   title: Final Project Presentations
+#   speakers: You!
+#   papers:
+#   due:
+#     
+# - date: 6/11/2020
+#   title: Final reports due (no class)
+#   speakers:
+#   papers:
+#   due:    
+
+
+# - date: 4/7/2020
+#   title: Introduction
+#   speakers: Sachin and Nick
+#   slides: slides/CS244 Lecture_01_2020.pdf
+#   papers:
+#     - authors: S. Keshav
+#       title: How to Read a Paper
+#       url: papers/HowtoReadPaper.pdf
+#       optional: true
+#   due:
+#     
+# - date: 4/9/2020
+#   title: Architecture and Principles
+#   speakers: Sachin
+#   slides: slides/Lecture_02_2020.pdf
+#   papers:
+#     - authors: D. D. Clark
+#       title: The Design Philosophy of the DARPA Internet Protocols
+#       url: papers/DesignPhilosophyDARPA.pdf
+#       venue: SIGCOMM 1988
+#       optional: false
+#     - authors: B. Leiner, V. Cerf, D. Clark, R. Kahn, L. Kleinrock, D. Lynch, J. Postel, L. Roberts, S. Wolff
+#       title: A Brief History of the Internet
+#       url: http://www.isoc.org/internet/history/brief.shtml
+#       venue:
+#       optional: true
+#     - authors: P. Baran
+#       title: On Distributed Communications Networks
+#       url: papers/DistributedCommunicationsNetworks.pdf
+#       venue: IEEE Trans. Communications, 1964
+#       optional: true
+#   due:
+#     - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> released, due Monday, April 27 at 5pm
+#     
+# - date: 4/14/2020
+#   title: Architecture and Principles
+#   speakers: Sachin
+#   slides: slides/Lecture_03_2020.pdf
+#   papers:
+#     - authors: J. H. Saltzer, D. P. Reed, D. D. Clark
+#       title: End-to-End Arguments in System Design
+#       url: papers/End2EndSystemDesign.pdf
+#       venue: Distributed Computing Systems, 1981.
+#       optional: false
+#   due:
+# 
+#     
+# - date: 4/16/2020
+#   title: Congestion Control
+#   speakers: Nick
+#   slides: slides/Lecture_04_2020.pdf
+#   papers:
+#     - authors: V. Jacobson and M. J. Karels
+#       url: papers/CongestionControl.pdf
+#       title: Congestion Avoidance and Control
+#       venue: SIGCOMM 1988
+#       optional: false
+#     - authors: B. Briscoe
+#       url: papers/fair-ccr2007.pdf
+#       title: "Flow Rate Fairness: Dismantling a Religion"
+#       venue: SIGCOMM CCR 2007
+#       optional: true
+#   due:
+# 
+# - date: 4/21/2020
+#   title: Congestion Control II
+#   speakers: Keith Winstein
+#   slides: slides/Lecture_05_2020.pdf
+#   papers:
+#     - authors: F. Yan, J. Ma, G. Hill, D. Raghavan, R. Wahby, P. Levis, K. Winstein
+#       url: https://www.usenix.org/system/files/conference/atc18/atc18-yan-francis.pdf
+#       title: "Pantheon: the training ground for Internet congestion-control research"
+#       venue: USENIX ATC 2018
+#       optional: false
+#     - authors: M. Schapira and K. Winstein
+#       url: papers/hotnets17-congestion-control-throwdown.pdf
+#       title: Congestion-Control Throwdown
+#       venue: ACM HotNets 2017
+#       optional: false
+#   due:
+# 
+# - date: 4/23/2020
+#   title: Switching
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_06_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_06_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: T. Anderson et al.
+#       url: papers/HighSpeedSwitchScheduling.pdf
+#       title: High-speed Switch Scheduling for Local-area Networks
+#       venue: ACM Trans. Computer Systems, 1993
+#       optional: false
+#   due:
+#     - <a href="https://docs.google.com/document/d/1vYp_pjUhnYvBnKkvGeUV7yh6g3UndBrVRNcMLRtMEw4/edit?usp=sharing">Assignment 1</a> due next Monday, April 27 at 5pm
+# 
+# - date: 4/28/2020
+#   title: Programmable Forwarding
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_07_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_07_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: Bosshart et al.
+#       url: papers/sdn-chip-sigcomm-2013.pdf
+#       title: "Forwarding metamorphosis: fast programmable match-action processing in hardware for SDN"
+#       venue: SIGCOMM 2013
+#       optional: false
+#   due:
+# 
+# - date: 4/30/2020
+#   title: SDN
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_08_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_08_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: N. McKeown, T. Anderson, H. Balakrishnan, G. Parulkar, L. Peterson, J. Rexford, S. Shenker, J. Turner
+#       url: papers/openflow.pdf
+#       title: "OpenFlow: Enabling Innovation in Campus Networks"
+#       venue: ACM CCR April 2008
+#       optional: false
+#     - authors: M. Casado, M. Freedman, J. Pettit, J. Luo, N. McKeown, S. Shenker
+#       url: papers/Ethane.pdf
+#       title: "Ethane: Taking Control of the Enterprise"
+#       venue: SIGCOMM 2007
+#       optional: false
+#   due:    
+#     - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Final project proposal</a> due next Monday, May 4th at 11:59pm
+# 
+# - date: 5/5/2020
+#   title: SDN II
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_09_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_09_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: Koponen et al.
+#       url: papers/network-virtualization-koponen-nsdi14.pdf
+#       title: Network Virtualization in Multi-tenant Datacenters
+#       venue: NSDI 2014
+#       optional: false
+#     - authors: M. Casado, N. McKeown, S. Shenker
+#       title: From Ethane to SDN and Beyond
+#       url: papers/ethane_to_sdn_and_beyond.pdf
+#       venue: CCR 2019
+#       optional: true
+#   due:
+# 
+# - date: 5/7/2020
+#   title: Buffer Sizing
+#   speakers: Nick
+#   slides:
+#     - url: slides/Lecture_10_2020.pptx
+#       text: Slides (ppt)
+#     - url: slides/Lecture_10_2020.pdf
+#       text: Slides (pdf)
+#   papers:
+#     - authors: G. Appenzeller et al.
+#       url: papers/SizingRouterBuffersAppenzeller.pdf
+#       title: Sizing Router Buffers
+#       venue: SIGCOMM 2004
+#       optional: false
+#     - authors: McKeown et al.
+#       url: papers/sizing-router-buffers-redux.pdf
+#       title: Sizing Router Buffers (Redux)
+#       venue: CCR 2019
+#       optional: false
+#   due:
+# 
+# - date: 5/12/2020
+#   title: Security
+#   speakers: Zakir Durumeric
+#   slides: slides/Lecture_11_2020.pdf
+#   papers:
+#     - authors: Nick Sullivan
+#       url: https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/
+#       title: A Detailed Look at RFC 8446 (a.k.a. TLS 1.3)
+#       optional: false
+#     - authors: Adrian et al.
+#       url: papers/imperfect-forward-secrecy-ccs15.pdf
+#       title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
+#       venue: CCS 2015
+#       optional: false
+#   due:
+# 
+# - date: 5/14/2020
+#   title: Edge Networking
+#   speakers: Sachin
+#   papers:
+#     - authors: K.K. Yap et al.
+#       url: papers/espresso.pdf
+#       title: "Taking the Edge off with Espresso: Scale, Reliability and Programmability for Global Internet Peering"
+#       venue: SIGCOMM 2017
+#       optional: false
+#   due:
+# 
+# - date: 5/19/2020
+#   title: Midterm
+#   speakers:
+#   papers:
+#   due:
+#     
+# - date: 5/21/2020
+#   title: Data centers
+#   speakers: Arjun Singh
+#   papers:
+#     - authors: Singh et al.
+#       url: https://research.google/pubs/pub43837.pdf
+#       title: "Jupiter Rising: A Decade of Clos Topologies and Centralized Control in Google's Datacenter Network"
+#       venue: SIGCOMM 2015
+#       optional: false
+#   due:    
+#     - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Intermediate progress report</a> due tomorrow Friday, May 22nd at 11:59pm
+# 
+#     
+# - date: 5/26/2020
+#   title: Wireless
+#   speakers: Sachin
+#   papers:
+#     - authors: J. Bicket, D. Aguayo, S. Biswas, R. Morris
+#       url: papers/roofnet.pdf
+#       title: "Architecture and Evaluation of an Unplanned 802.11b Mesh Network"
+#       venue: MobiCom 2005
+#       optional: false
+#   due:
+#     
+# - date: 5/28/2020
+#   title: Wireless II
+#   speakers: Sachin
+#   papers:
+#     - authors: S. Hong, J. Mehlman, S. Katti
+#       url: https://web.stanford.edu/~skatti/pubs/sigcomm12-picasso.pdf
+#       title: "Picasso: Flexible RF and Spectrum Slicing"
+#       venue: SIGCOMM 2012
+#       optional: false
+#   due:
+#     
+# - date: 6/2/2020
+#   title: ML for Networking
+#   speakers: Mohammad Alizadeh
+#   papers:
+#     - authors: H. Mao, M. Schwarzkopf, S.B. Venkatakrishnan, Z. Meng, M. Alizadeh
+#       url: https://web.mit.edu/decima/content/sigcomm-2019.pdf
+#       title: Learning Scheduling Algorithms for Data Processing Clusters
+#       venue: SIGCOMM 2019
+#       optional: false
+#   due:
+#     
+# - date: 6/4/2020
+#   title: Video Streaming
+#   speakers: TY Huang
+#   papers:
+#     - authors: TY Huang, R. Johari, N. McKeown, M. Trunnell, M. Watson
+#       url: papers/sigcomm2014-video.pdf
+#       title: "A Buffer-Based Approach to Rate Adaptation: Evidence from a Large Video Streaming Service"
+#       venue: SIGCOMM 2014
+#       optional: false
+#   due:
+#     
+# - date: 6/9/2020
+#   title: Final Project Presentations
+#   speakers: You!
+#   papers:
+#   due:
+#     
+# - date: 6/11/2020
+#   title: Final reports due (no class)
+#   speakers:
+#   papers:
+#   due:    
+#     - <a href="https://docs.google.com/document/d/1OzsZSJRvYtyYPAzdgqpE9O6DNGyubywVW8mJuvaJJ6I/edit?usp=sharing">Final report</a> due at 5pm
