@@ -275,12 +275,12 @@
   slides:
   papers: 
     - authors: Sivaraman et al.
-      title: TBA
+      title: An Experimental Study of the Learnability of Congestion Control
       url: https://cs.stanford.edu/~keithw/www/Learnability-SIGCOMM2014.pdf
       venue: SIGCOMM 2014
       optional: false
     - authors: Mao et al.
-      title: TBA
+      title: Neural Adaptive Video Streaming with Pensieve
       url: https://web.mit.edu/pensieve/content/pensieve-sigcomm17.pdf
       venue: SIGCOMM 2017
       optional: false
@@ -292,7 +292,7 @@
   slides:
   papers:
     - authors: Yan et al.
-      title: TBA
+      title: "Learning in situ: a randomized experiment in video streaming"
       url: https://puffer.stanford.edu/static/puffer/documents/puffer-paper.pdf
       venue: NSDI 2020
       optional: false
