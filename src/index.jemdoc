@@ -21,9 +21,9 @@ The goals for this class are:
 - Philip: TBA
 - Colin: TBA
 
-*Communication:* Course announcements will be disseminated via the offical course mailing list TODO. We use [TODO Canvas] for discussion. 
+*Communication:* Course announcements will be disseminated via the offical course mailing list. We use Canvas for discussion. 
 
-*Assignments:* All course assignments should be submitted via [TODO Canvas].
+*Assignments:* All course assignments should be submitted via Canvas.
 
 *Prerequisites:* This course assumes a basic understanding of topics in networking, such as packet-switching, routing, socket programming, and congestion control. It is also helpful to know how to program in Python. We suggest taking [http://cs144.stanford.edu/ CS 144], EE 284, or equivalent. For a refresher, you could look at the textbook "Computer Networking: A Top-Down Approach" by J. Kurose and K. Ross or "Computer Networks: A Systems Approach" by L. Peterson and B. Davie.
 
@@ -35,7 +35,7 @@ The goals for this class are:
 
 The class consists of two main activities:
 
-*Papers and discussions:* We will read 1-2 papers for each class (i.e. 2-4 papers per week), and discuss them in class. You will likely need to spend a few hours reading each paper and making notes, to prepare you to discuss them in class. This class only works if you come prepared to discuss the papers in detail, which is why TODO\% of your grade is for in-class participation. Do not take this course unless you are willing and able to do a lot of reading.
+*Papers and discussions:* We will read 1-2 papers for each class (i.e. 2-4 papers per week), and discuss them in class. You will likely need to spend a few hours reading each paper and making notes, to prepare you to discuss them in class. This class only works if you come prepared to discuss the papers in detail, which is why 20\% of your grade is for in-class participation. Do not take this course unless you are willing and able to do a lot of reading.
 
 *Replicating research:*
 
@@ -47,13 +47,29 @@ You can see example replications on the [https://reproducingnetworkresearch.word
 
 == Grading Policy
 
-TODO 
+*Reading and Participation:*
+  - Critiques before class (20%)
+  - Critiques extra credit (5%)
+  - In-class Participation (20%)
+
+*Replicating Research:*
+  - Midterm Report (20%)
+  - Final Report   (30%)
+  - Final Presentation (10%)
 
 == Critiques
 
-Before each class, you must submit a short critique of the required readings on [TODO Canvas] (under the Quizzes tab). *Critiques will be accepted until 11:59pm* the night before class. Canvas will allow submissions a few minutes late, and these may or may not be graded.
+Before each class, you must submit a short critique of the required readings. Each critique should be about a half a page and should roughly cover the following questions:
+- What is the paper about? What is the issue the authors are trying to solve?
+- What was the state of the world before this paper? How did this change that?
+- How do the authors go about trying to solve the issue? What's the main idea? What are the paper's main contributions?
+- How did the authors do? Is the evaluation sound and unbiased? Are the authors’ results sufficiently justified in the paper?
+- Who does the issue/paper affect? Will this paper be relevant in 10 years, or alternatively, has the paper stood the test of time?
+- What do you think about the paper? Is it well written?
 
-There are prompts on Canvas to help frame your critique. As you read the paper, keep in mind that for the most part, these are classic, high-impact papers in networking. It's always possible to find flaws in a paper, and you will notice flaws in these papers, but it will be more interesting and rewarding to focus on their strengths.
+Critiques will be submitted through email to the TA (chdrewes@stanford.edu) with the subject "CS 244: <student name> <day>". For example, the critiques due on 4\/4 would be sent in an email with the subject "CS 244: Colin Drewes 4/4". Clearly separate text belonging to different papers. Critiques will be accepted until 12am (midnight) the night before class. If you do not strictly adhere to the structure of this subject line your response may get lost. This is the hard deadline. 
+
+It is not possible to make up for a missed critique so please do not email the staff for late day requests
 
 == In-class Participation
 
