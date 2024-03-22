@@ -17,7 +17,7 @@
       optional: false
     - authors: Leiner et al.
       title: A Brief History of the Internet
-      url: papers/L2-Brief-history.pdf
+      url: papers/L2-brief-history.pdf
       venue:
       optional: false 
   due:
