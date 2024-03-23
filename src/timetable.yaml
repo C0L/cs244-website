@@ -50,11 +50,6 @@
       url: papers/HighSpeedSwitchScheduling.pdf
       venue: ACM Transactions on Computer Systems
       optional: false
-    - authors: G. Appenzeller et al.
-      title: Sizing Router Buffers
-      url: papers/SizingRouterBuffersAppenzeller.pdf
-      venue: SIGCOMM 2004
-      optional: false
   due:
     - Selected figure and project proposal due Monday, April 15 11:59PM
 
@@ -85,15 +80,15 @@
   speakers: Phil
   slides:
   papers:
-    - authors:
-      title: TBD
-      url:
-      venue:
+    - authors: Wetherall
+      title: "Active network vision and reality: lessons from a capsule-based system"
+      url: papers/wetherall.pdf
+      venue: SOSP-17
       optional: false
-    - authors:
-      title: TBD
-      url:
-      venue:
+    - authors: Sivaraman et al.
+      title: "Packet Transactions: High-Level Programming for Line-Rate Switches"
+      url: papers/sivaraman-sigcomm16.pdf
+      venue: SIGCOMM 2016
       optional: false
   due:
 
