@@ -94,7 +94,7 @@
 
 - date: 4/23/2024
   title: Datacenter Networks
-  speakers: Keith + Omid
+  speakers: Keith + <a href="https://omidm.net/">Omid</a>
   slides:
   papers:
     - authors: Al-Fares et al.
@@ -179,7 +179,7 @@
 
 - date: 5/9/2024
   title: Internet Governance
-  speakers: Phil + Jon Peterson(?)
+  speakers: Phil + <a href="https://www.internetsociety.org/author/peterson/">Jon Peterson</a>
   slides:
   papers:
   due:
