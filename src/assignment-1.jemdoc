@@ -1,0 +1,96 @@
+= Assignment 1: The Big Picture and Picking a Group
+
+*Due: Monday, April 8, 2024 at 7PM**
+
+This quarter, you're going to try to replicate an experimental result from
+a networking research paper. We say /try/ because you might not be able to! 
+Whether you can or can't, both are useful scientific results: you'll write up your results and publish
+them on the [Reproducing Networking Research](https://reproducingnetworkresearch.wordpress.com/about/) blog.
+We focus on replicating an prior result because it introduces a degree 
+of complexity and rigor which is hard to encounter in a one quarter 
+open research project.
+
+
+There are four major milestones to your project:
+- Assembling a group of 3-4 people to work together throughout the quarter
+- Propose a research result that you will replicate
+- Submit a midterm report in Week 6
+- Present, write up and publish your final results
+
+= Goals
+When you're done with this assignment, you should have
+
+- learned the difference between repeating, reproducing, and 
+replicating research results;
+- grown from a group into a team, with shared goals
+and expectations;
+- agreed on a general topic in networking you'd like to replicate a result from
+
+
+= 1 Repeatability, Reproducibility, and Replicability
+
+This quarter, you'll try to replicate a prior result from a networking research paper.
+How is this different from reproducing a result, or repeating a result? The three
+terms means distinct things. [Read a short Nature article that defines the three
+terms.](https://dl.acm.org/doi/abs/10.1145/3089262.3089266)
+
+In prior years, [students in CS244 spent 3 weeks reproducing a result.](https://dl.acm.org/doi/abs/10.1145/3089262.3089266).
+We found that while this experience was valuable, with the increasing emphasis
+on reproducibility in ACM conferences this can often involve downloading some
+code and running a few scripts. Furthermore, downloading and running some
+code doesn't give you a deeper understanding about a networking result.
+We've therefore transitioned to /replicating/ results -- you will re-implement
+a system based on the description in a paper and measure what you've built.
+
+= 2 Form a Team
+*cribbed from Erin MacDonald*
+
+The most important parts of a successful team are:
+
+  1. Finding a time when everyone meets, as a group, each week, for at least two hours.
+  2. Having similar expectations for the course and the amount of time you will spend on it. Each student should expect to spend about five hours outside of class per week on FLIGHT.
+
+
+== Find a Time to Meet
+
+Compare your schedules to find a time block of at least two hours when you all
+can meet. Commit to meeting at this time each week and working together. If 
+something comes up and someone can't make it, be sure to schedule another time
+for that week.
+
+= Agree on an Area of Networking Research to Explore
+
+Look over the programs from recent SIGCOMM, NSDI, INFOCOM, CoNEXT, Mobicom, and Mobisys
+conferences. Look at the sessions and titles of papers. The goal isn't to yet focus on
+a single paper, it's to find an area you all find interesting and would like to learn more
+about. Your next assignment will be to pick a particular result from a partcular paper
+to replicate.
+
+== Write a Charter
+
+A team charter is a document of your own design. It should be "artfully" designed, 
+expressing some interests and passions of your team. Things to discuss:
+  1. What are your goals for the class? Please have each member discuss individually.
+  2. Talk about some triumphs and challenges on past team assignments.
+  3. Take this [quiz](https://web.archive.org/web/20220430211244/https://whatkindofdesigner.com/). Discuss whether or not you agree with the classification. It will give you a starting point for discussing your interests in your project.
+
+Include in the charter:
+
+  0. Who are your team members?
+  1. What is your team mascot? 
+  2. How will the team celebrate triumphs?
+  3. How will the team make important decisions? 
+  4. How will the team resolve conflicts and discuss problems?
+  5. Leadership: What does "leadership" mean to your team? 
+  6. Who is the person that hits "submit" on your reports and milestones? The one who crosses the "t"s and dots the "i"s? You can assign different people to be in charge of different reports and milestones, but it helps to have a clear person in charge for each one.
+  7. What are the skills of the team members? What special skill does everyone bring to the team?
+  8. When will the team meet as a group each week? Please be precise.
+  9. What will be the procedure for missing or being late to this meeting? How much advance notice must be given and using what method? (We recommend that last-minute text messaging is not used to inform team members that a member will be late or miss a meeting.) 
+ 10. How will you design your software so people can work independently, through stable and well-defined interfaces?
+ 11. What area(s) of networking research will you explore?
+
+= 4 Handing In
+
+Send an email to cs244-spr2324-staff@lists.stanford.edu, with
+the subject "Team <NAME>", attaching your charter as a PDF.
+
