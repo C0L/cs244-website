@@ -31,13 +31,13 @@ and expectations, and
 
 This quarter, you'll try to replicate a prior result from a networking research paper.
 How is this different from reproducing a result, or repeating a result? The three
-terms means distinct things. Read a <a href="https://www.nature.com/articles/nmeth.3489">short Nature article</a> that defines the three terms. 
+terms means distinct things. Read [https://www.acm.org/publications/policies/artifact-review-and-badging-current how the ACM defines the three terms].
 
-In prior years, <a href="https://dl.acm.org/doi/abs/10.1145/3089262.3089266">students in CS244 spent 3 weeks reproducing a result.</a>
+In prior years, [https://dl.acm.org/doi/abs/10.1145/3089262.3089266 students in CS244 spend 3 weeks reproducing a result].
 We found that while this experience was valuable, with the increasing emphasis
-on reproducibility in ACM conferences this can often involve downloading some
-code and running a few scripts. Furthermore, downloading and running some
-code doesn't give you a deeper understanding about a networking result.
+on reproducibility in ACM conferences achieving this, is often quite simple: 
+download some code and running a few scripts. While this is good for the research
+community generally, it doesn't give you a deeper understanding of a networking result.
 We've therefore transitioned to /replicating/ results -- you will re-implement
 a system based on the description in a paper and measure what you've built.
 
