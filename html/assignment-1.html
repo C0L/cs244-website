@@ -5,119 +5,822 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css?1" type="text/css" />
-<title>Assignment 1: Forming a Team</title>
+<title>CS244: Advanced Topics in Networking, Spring 2024</title>
 </head>
 <body>
 <div id="layout-content">
 <div id="toptitle">
-<h1>Assignment 1: Forming a Team</h1>
+<h1>CS244: Advanced Topics in Networking, Spring 2024</h1>
 </div>
-<p><b>Due: Monday, April 8, 2024 at 7PM</b></p>
-<p>This quarter, you're going to try to replicate an experimental result from
-a networking research paper. We say <i>try</i> because you might not be able to! 
-Whether you can or can't, both are useful scientific results: you'll write up your results and publish
-them on the <a href="Reproducing">Networking Research</a>(https:<i></i>reproducingnetworkresearch.wordpress.com<i>about</i>) blog.
-We focus on replicating an prior result because it introduces a degree 
-of complexity and rigor which is hard to encounter in a one quarter 
-open research project.</p>
-<p>There are four major milestones to your project:</p>
+<p>CS244 is a graduate course in computer networks. In this class we'll explore the principles and design decisions which underly the Internet. We'll explore the pros and cons of the current design, and give some thought to how we can make the Internet better in future.</p>
+<p>The goals for this class are:</p>
 <ul>
-<li><p>Assembling a group of 3-4 people to work together throughout the quarter</p>
+<li><p>To become familiar with the state of the art in networking research: network architecture, protocols and systems.</p>
 </li>
-<li><p>Propose a research result that you will replicate</p>
+<li><p>To gain some practice in reading research papers and critically understanding the research of others.</p>
 </li>
-<li><p>Submit a midterm report in Week 6</p>
-</li>
-<li><p>Present, write up and publish your final results</p>
+<li><p>To gain experience with network programming using state-of-the-art research platforms.</p>
 </li>
 </ul>
-<h1>Goals</h1>
-<p>When you're done with this assignment, you should have</p>
+<h1>Course Information</h1>
+<p><b>Professors:</b> <a href="https://cs.stanford.edu/~keithw/"><b>Keith Winstein</b></a> and <a href="http://csl.stanford.edu/~pal/"><b>Philip Levis</b></a></p>
+<p><b>TA:</b> <a href="https://colindrewes.com/">Colin Drewes</a></p>
+<p><b>Lectures:</b> Tue, Thu 1:30PM - 2:50PM in <a href="https://campus-map.stanford.edu/?id=01-300">300-300</a></p>
+<p><b>Office Hours:</b> </p>
 <ul>
-<li><p>learned the difference between repeating, reproducing, and 
-replicating research results, </p>
+<li><p>Keith: TBA</p>
 </li>
-<li><p>grown from a group into a team, with shared goals
-and expectations, and</p>
+<li><p>Philip: TBA</p>
 </li>
-<li><p>agreed on a general topic in networking you'd like to replicate a result from.</p>
+<li><p>Colin: TBA</p>
 </li>
 </ul>
-<h1>1 Repeatability, Reproducibility, and Replicability</h1>
-<p>This quarter, you'll try to replicate a prior result from a networking research paper.
-How is this different from reproducing a result, or repeating a result? The three
-terms means distinct things. Read <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">how the ACM defines the three terms</a>.</p>
-<p>In prior years, <a href="https://dl.acm.org/doi/abs/10.1145/3089262.3089266">students in CS244 spent 3 weeks reproducing a result</a>.
-We found that while this experience was valuable, with the increasing emphasis
-on reproducibility in ACM conferences achieving this, is often quite simple: 
-download some code and running a few scripts. While this is good for the research
-community generally, it doesn't give you a deeper understanding of a networking result.
-We've therefore transitioned to <i>replicating</i> results &ndash; you will re-implement
-a system based on the description in a paper and measure what you've built.</p>
-<h1>2 Form a Team</h1>
-<p><b>cribbed from Erin MacDonald</b></p>
-<p>The most important parts of a successful team are:</p>
+<p><b>Communication:</b> Course announcements will be disseminated via the offical course mailing list. We use Canvas for discussion. </p>
+<p><b>Assignments:</b> All course assignments should be submitted via Canvas.</p>
+<p><b>Prerequisites:</b> This course assumes a basic understanding of topics in networking, such as packet-switching, routing, socket programming, and congestion control. It is also helpful to know how to program in Python. We suggest taking <a href="http://cs144.stanford.edu/">CS 144</a>, EE 284, or equivalent. For a refresher, you could look at the textbook &ldquo;Computer Networking: A Top-Down Approach&rdquo; by J. Kurose and K. Ross or &ldquo;Computer Networks: A Systems Approach&rdquo; by L. Peterson and B. Davie.</p>
+<h1>Schedule and Papers</h1>
+<div id="schedule">
+  <!-- <tr> -->
+  <!--   <th class="week">Week</th> -->
+  <!--   <th>Tuesday</th> -->
+  <!--   <th>Thursday</th> -->
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">1</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>4/2 - Introductions: Why internet?</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith and Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          <li>No readings</li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>4/4 - Internet Architecture</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith and Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/DesignPhilosophyDARPA.pdf" class="title">The Design Philosophy of the DARPA Internet Protocols</a>
+            
+            <p class="authors">Clark</p>
+            <p class="venue">SIGCOMM 1988</p>
+            
+          <li>
+            <a href="papers/L2-brief-history.pdf" class="title">A Brief History of the Internet</a>
+            
+            <p class="authors">Leiner et al.</p>
+            <p class="venue">CCR 2009</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Group formation due Monday, April 8 11:59PM</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">2</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>4/9 - End-to-End</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith and Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/End2EndSystemDesign.pdf" class="title">End-to-End Arguments in System Design</a>
+            
+            <p class="authors">Saltzer et al.</p>
+            <p class="venue">Distributed Computing Systems, 1981.</p>
+            
+          <li>
+            <a href="https://datatracker.ietf.org/doc/html/rfc1958" class="title">RFC 1958</a>
+            
+            <p class="authors">Carpenter</p>
+            <p class="venue">Network Working Group 1996</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>4/11 - Switches (Scheduling and Buffering)</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/HighSpeedSwitchScheduling.pdf" class="title">High-Speed Switch Scheduling for Local-Area Networks</a>
+            
+            <p class="authors">Anderson et al.</p>
+            <p class="venue">ACM Transactions on Computer Systems</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Selected figure and project proposal due Monday, April 15 11:59PM</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">3</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>4/16 - WAN and LAN</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/Ethane.pdf" class="title">Ethane: Taking Control of the Enterprise</a>
+            
+            <p class="authors">Casado et al.</p>
+            <p class="venue">SIGCOMM 2007</p>
+            
+          <li>
+            <a href="papers/nsdi17-firestone.pdf" class="title">VFP: A Virtual Switch Platform for Host SDN in the Public Cloud</a>
+            
+            <p class="authors">Firestone</p>
+            <p class="venue">NSDI 2017</p>
+            
+          <li>
+            <a href="papers/b4-sigcomm13.pdf" class="title">B4: Experience with a Globally-Deployed Software Defined WAN</a>
+            
+            <p class="authors">Jain et al.</p>
+            <p class="venue">SIGCOMM 2013</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>4/18 - Programs and Programmability</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/wetherall.pdf" class="title">Active network vision and reality: lessons from a capsule-based system</a>
+            
+            <p class="authors">Wetherall</p>
+            <p class="venue">SOSP 1999</p>
+            
+          <li>
+            <a href="papers/sivaraman-sigcomm16.pdf" class="title">Packet Transactions: High-Level Programming for Line-Rate Switches</a>
+            
+            <p class="authors">Sivaraman et al.</p>
+            <p class="venue">SIGCOMM 2016</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">4</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>4/23 - Datacenter Networks</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith + <a href="https://omidm.net/">Omid</a>
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/al-fares-sigcomm08.pdf" class="title">A Scalable, Commodity Data Center Network Architecture</a>
+            
+            <p class="authors">Al-Fares et al.</p>
+            <p class="venue">SIGCOMM 2008</p>
+            
+          <li>
+            <a href="papers/poutievski-sigcomm22.pdf" class="title">Jupiter Evolving: Transforming Google's Datacenter Network via Optical Circuit Switches and Software-Defined Networking</a>
+            
+            <p class="authors">Poutievski et al.</p>
+            <p class="venue">SIGCOMM 2022</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>4/25 - Congestion Control</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/CongestionControl.pdf" class="title">Congestion Avoidance and Control</a>
+            
+            <p class="authors">Jacobson and Karels</p>
+            <p class="venue">SIGCOMM 1988</p>
+            
+          <li>
+            <a href="papers/cong_av.pdf" class="title">Analysis of the Increase and Decrease Algorithms for Congestion Avoidance in Computer Networks</a>
+            
+            <p class="authors">Chiu and Jain</p>
+            <p class="venue">Computer Networks and ISDN Systems 17 (1989)</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">5</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>4/30 - Delay-based Congestion Control</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/tcp_vegas.pdf" class="title">TCP Vegas: end to end congestion avoidance on a global Internet</a>
+            
+            <p class="authors">Brakmo and Peterson</p>
+            <p class="venue">IEEE Journal on Selected Areas in Communications 1995</p>
+            
+          <li>
+            <a href="https://datatracker.ietf.org/doc/html/rfc6297" class="title">A Survey of Lower-than-Best-Effort Transport Protocols</a>
+            
+            <p class="authors">Welzl and Ros</p>
+            <p class="venue">Internet Engineering Task Force 2011</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>5/2 - Delay-based Problems</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/bbr.pdf" class="title">BBR</a>
+            
+            <p class="authors">Cardwell et al.</p>
+            <p class="venue">ACM Queue 2016</p>
+            
+          <li>
+            <a href="papers/venkat_starvation.pdf" class="title">Starvation in End-to-End Congestion Control</a>
+            
+            <p class="authors">Arun et al.</p>
+            <p class="venue">SIGCOMM 2022</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">6</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>5/7 - Measurement and Monitoring</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil + Zakir
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/paxson1995.pdf" class="title">Wide area traffic: the failure of Poisson modeling</a>
+            
+            <p class="authors">Paxson and Floyd</p>
+            <p class="venue">IEE/ACM Transactions on Networking 1995</p>
+            
+          <li>
+            <a href="papers/sec13-paper_durumeric.pdf" class="title">ZMap: Fast Internet-wide Scanning and Its Security Applications</a>
+            
+            <p class="authors">Durumeric at al.</p>
+            <p class="venue">USENIX Security 2013</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>5/9 - Internet Governance</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil + <a href="https://www.internetsociety.org/author/peterson/">Jon Peterson</a>
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          <li>No readings</li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Midterm report due Monday, April 13 11:59PM</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">7</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>5/14 - Surveillance and Privacy</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/greatfirewall-imc2015.pdf" class="title">Examining How the Great Firewall Discovers Hidden Circumvention Servers</a>
+            
+            <p class="authors">Ensafi et al.</p>
+            <p class="venue">IMC 2015</p>
+            
+          <li>
+            <a href="papers/encore.pdf" class="title">Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests</a>
+            
+            <p class="authors">Burnett and Feamster</p>
+            <p class="venue">SIGCOMM 2015</p>
+            
+          <li>
+            <a href="papers/wufirewall.pdf" class="title">How the Great Firewall of China Detects and Blocks Fully Encrypted Traffic</a>
+            
+            <p class="authors">Wu et al.</p>
+            <p class="venue">USENIX Security 2023</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Pick just two of the above papers!</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="day">
+      <h2>5/16 - NIC/Host Interfaces</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/neugebauer-sigcomm18.pdf" class="title">(Selected sections of) Understanding PCIe performance for end host networking</a>
+            
+            <p class="authors">Neugebauer et al.</p>
+            <p class="venue">SIGCOMM 2018</p>
+            
+          <li>
+            <a href="papers/osdi-sadok.pdf" class="title">Ensō: A Streaming Interface for NIC-Application Communication</a>
+            
+            <p class="authors">Sadok et al.</p>
+            <p class="venue">OSDI 2023</p>
+            
+          <li>
+            <a href="None" class="title">CC-NIC: a Cache-Coherent Interface to the NIC</a>
+            
+            <p class="authors">Schuh et al.</p>
+            <p class="venue">ASPLOS 2024</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">8</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>5/21 - Wireless</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Phil
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/roofnet.pdf" class="title">Architecture and Evaluation of an Unplanned 802.11b Mesh Network</a>
+            
+            <p class="authors">Bicket et al.</p>
+            <p class="venue">MobiCom 2005</p>
+            
+          <li>
+            <a href="papers/adib-sigcomm13.pdf" class="title">See through walls with WiFi!</a>
+            
+            <p class="authors">Adib and Katabi</p>
+            <p class="venue">SIGCOMM 2013</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>5/23 - Simulation</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="papers/paxson-wintersimulation.pdf" class="title">Why We Don't Know How To Simulate The Internet</a>
+            
+            <p class="authors">Floyd and Paxson</p>
+            <p class="venue">Winter Simulation Conference 1997</p>
+            
+          <li>
+            <a href="papers/atc18-yan-francis.pdf" class="title">Pantheon: the training ground for Internet congestion-control research</a>
+            
+            <p class="authors">Yan et al.</p>
+            <p class="venue">ATC 2018</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">9</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>5/28 - ML for Networking</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="https://cs.stanford.edu/~keithw/www/Learnability-SIGCOMM2014.pdf" class="title">An Experimental Study of the Learnability of Congestion Control</a>
+            
+            <p class="authors">Sivaraman et al.</p>
+            <p class="venue">SIGCOMM 2014</p>
+            
+          <li>
+            <a href="https://web.mit.edu/pensieve/content/pensieve-sigcomm17.pdf" class="title">Neural Adaptive Video Streaming with Pensieve</a>
+            
+            <p class="authors">Mao et al.</p>
+            <p class="venue">SIGCOMM 2017</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+    <div class="day">
+      <h2>5/30 - ML for Networking</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> Keith
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          
+          <li>
+            <a href="https://puffer.stanford.edu/static/puffer/documents/puffer-paper.pdf" class="title">Learning in situ: a randomized experiment in video streaming</a>
+            
+            <p class="authors">Yan et al.</p>
+            <p class="venue">NSDI 2020</p>
+            
+          </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+  <!-- <tr> -->
+  <!-- <td class="week">10</td> -->
+  <div class="week">
+    
+    <div class="day">
+      <h2>6/4 - Final Presentations</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> You!
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          <li>No readings</li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Final report due Sat June 8th, 6:30PM</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="day">
+      <h2>6/6 - Final Presentations</h2>
+      
+      <p class="speakers">
+        <strong>Speaker:</strong> You!
+        
+      </p>
+      
+      <div class="papers">
+        <ul>
+          
+          <li>No readings</li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="due">
+        <h3>Assignments</h3>
+        <ul>
+          
+          <li>Final report due Sat June 8th, 6:30PM</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+  <!-- </tr> -->
+  
+</div>
+<div style="clear:both"></div>
+<h1>Organization</h1>
+<p>The class consists of two main activities:</p>
+<p><b>Papers and discussions:</b> We will read 1-2 papers for each class (i.e. 2-4 papers per week), and discuss them in class. You will likely need to spend a few hours reading each paper and making notes, to prepare you to discuss them in class. This class only works if you come prepared to discuss the papers in detail, which is why 20% of your grade is for in-class participation. Do not take this course unless you are willing and able to do a lot of reading.</p>
+<p><b>Replicating research:</b></p>
+<p>You will complete one open-ended project <b>replicating</b> a major networking research result, with a few milestones through the quarter. We've found that replicating research results is a good way to get started doing networking research and contributing to the networking community.</p>
+<p>For research to be <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">replicated</a>, an independent group has corroborated the original result using code and experiments developed completely independently. </p>
+<p>You can see example replications on the <a href="https://reproducingnetworkresearch.wordpress.com/">Replicating Network Research blog</a>.</p>
+<h2>Grading Policy</h2>
+<p><b>Reading and Participation:</b></p>
 <ul>
-<li><p>Finding a time when everyone meets, as a group, each week, for at least two hours.</p>
+<li><p>Critiques before class (20%)</p>
 </li>
-<li><p>Having similar expectations for the course and the amount of time you will spend on it. Each student should expect to spend about five hours outside of class per week on the project.</p>
+<li><p>In-class Participation (20%)</p>
 </li>
 </ul>
-<h2>Find a Time to Meet</h2>
-<p>Compare your schedules to find a time block of at least two hours when you all
-can meet. Commit to meeting at this time each week and working together. If 
-something comes up and someone can't make it, be sure to schedule another time
-for that week.</p>
-<h2>Agree on an Area of Networking Research to Explore</h2>
-<p>Look over the programs from recent SIGCOMM, NSDI, INFOCOM, CoNEXT, Mobicom, and Mobisys
-conferences. Look at the sessions and titles of papers. The goal isn't to yet focus on
-a single paper, it's to find an area you all find interesting and would like to learn more
-about. Your next assignment will be to pick a particular result from a partcular paper
-to replicate.</p>
-<h2>Write a Charter</h2>
-<p>A team charter is a document of your own design. It should be &ldquo;artfully&rdquo; designed, 
-expressing some interests and passions of your team. Things to discuss:</p>
-<ol>
-<li><p>What are your goals for the class? Please have each member discuss individually.</p>
+<p><b>Replicating Research:</b></p>
+<ul>
+<li><p>Midterm Report (20%)</p>
 </li>
-<li><p>Talk about some triumphs and challenges on past team assignments.</p>
+<li><p>Final Report   (30%)</p>
 </li>
-<li><p>Take this <a href="quiz">quiz</a>(https:<i></i>web.archive.org<i>web</i>20220430211244<i>https:</i><i>whatkindofdesigner.com</i>). Discuss whether or not you agree with the classification. It will give you a starting point for discussing your interests in your project.</p>
+<li><p>Final Presentation (10%)</p>
 </li>
-</ol>
-<p>Include in the charter:</p>
-<ol>
-<li><p>Who are your team members?</p>
+</ul>
+<h2>Critiques</h2>
+<p>Before each class, you must submit a short critique of the required readings. Each critique should be about a half a page and should roughly cover the following questions:</p>
+<ul>
+<li><p>What is the paper about? What is the issue the authors are trying to solve?</p>
 </li>
-<li><p>What is your team mascot? </p>
+<li><p>What was the state of the world before this paper? How did this change that?</p>
 </li>
-<li><p>How will the team celebrate triumphs?</p>
+<li><p>How do the authors go about trying to solve the issue? What's the main idea? What are the paper's main contributions?</p>
 </li>
-<li><p>How will the team make important decisions? </p>
+<li><p>How did the authors do? Is the evaluation sound and unbiased? Are the authors’ results sufficiently justified in the paper?</p>
 </li>
-<li><p>How will the team resolve conflicts and discuss problems?</p>
+<li><p>Who does the issue/paper affect? Will this paper be relevant in 10 years, or alternatively, has the paper stood the test of time?</p>
 </li>
-<li><p>Leadership: What does &ldquo;leadership&rdquo; mean to your team? </p>
+<li><p>What do you think about the paper? Is it well written?</p>
 </li>
-<li><p>Who is the person that hits &ldquo;submit&rdquo; on your reports and milestones? The one who crosses the &ldquo;t&rdquo;s and dots the &ldquo;i&rdquo;s? You can assign different people to be in charge of different reports and milestones, but it helps to have a clear person in charge for each one.</p>
-</li>
-<li><p>What are the skills of the team members? What special skill does everyone bring to the team?</p>
-</li>
-<li><p>When will the team meet as a group each week? Please be precise.</p>
-</li>
-<li><p>What will be the procedure for missing or being late to this meeting? How much advance notice must be given and using what method? (We recommend that last-minute text messaging is not used to inform team members that a member will be late or miss a meeting.) </p>
-</li>
-<li><p>How will you design your software so people can work independently, through stable and well-defined interfaces?</p>
-</li>
-<li><p>What area(s) of networking research will you explore?</p>
-</li>
-</ol>
-<h1>4 Handing In</h1>
-<p>Send an email to cs244-spr2324-staff@lists.stanford.edu, with
-the subject &ldquo;Team &lt;NAME&gt;&rdquo;, attaching your charter as a PDF.</p>
+</ul>
+<p>Critiques will be submitted through email to the TA (chdrewes@stanford.edu) with the subject &ldquo;CS 244: &lt;student name&gt; &lt;day&gt;&rdquo;. For example, the critiques due on 4/4 would be sent in an email with the subject &ldquo;CS 244: Colin Drewes 4/4&rdquo;. Clearly separate text belonging to different papers. Critiques will be accepted until 12am (midnight) the night before class. If you do not strictly adhere to the structure of this subject line your response may get lost. This is the hard deadline. </p>
+<p>It is not possible to make up for a missed critique so please do not email the staff for late day requests</p>
+<p>Critiques will be graded as check, check+, or check-.  If all of your
+critiques are check, you will receive the full 20% credit. There is a
+5% of extra credit one can receive for check+; writing several
+critiques that make valuable observations or provide a good insight
+can bump your grade one notch (e.g., from a B+ to an A-). Critiques
+that merely restate or rephrase sentences in the paper and abstract
+(e.g., could have been written without reading the paper) will receive
+a check-. </p>
+<h2>In-class Participation</h2>
+<p>Is class participation based solely on attendance? No. Attendance is a necessary but not sufficient condition for good class participation. We will not take official roll during lecture, but because we make the effort to know everyone in the class we will notice if a student is frequently absent. Beyond attendance, we evaluate class participation by observing how prepared students are to discuss the covered paper when they come to class.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2024-03-29 19:00:32 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2024-03-30 03:32:28 UTC, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </div>

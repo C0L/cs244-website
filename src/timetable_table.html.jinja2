@@ -39,6 +39,7 @@
             <a href="{{paper['url']}}" class="title">{{paper['title']}}</a>
             {% if paper['optional'] %} <span class="optional">(Optional)</span> {% endif %}
             <p class="authors">{{ paper['authors'] }}</p>
+            <p class="venue">{{ paper['venue'] }}</p>
             {% endfor %}
           </li>
           {% endif %}

@@ -39,7 +39,7 @@ for day in timetable:
 
     if isinstance(day['papers'], list):
         for paper in day['papers']:
-            for field in ['authors','title','url','optional']:
+            for field in ['authors','title','url','venue','optional']:
                 if field not in paper:
                     error("paper for {} missing field '{}'".format(day['date'], field))
 
