@@ -21,9 +21,9 @@ The goals for this class are:
 - Philip: TBA
 - Colin: TBA
 
-*Communication:* Course announcements will be disseminated via the offical course mailing list. We use Canvas for discussion. 
+*Communication:* Course announcements will be disseminated via the offical course mailing list.
 
-*Assignments:* All course assignments should be submitted via Canvas.
+*Assignments:* All course assignments should be submitted via the course mailing list.
 
 *Prerequisites:* This course assumes a basic understanding of topics in networking, such as packet-switching, routing, socket programming, and congestion control. It is also helpful to know how to program in Python. We suggest taking [http://cs144.stanford.edu/ CS 144], EE 284, or equivalent. For a refresher, you could look at the textbook "Computer Networking: A Top-Down Approach" by J. Kurose and K. Ross or "Computer Networks: A Systems Approach" by L. Peterson and B. Davie.
 
