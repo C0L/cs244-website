@@ -220,7 +220,7 @@
       optional: false
     - authors: Sadok et al.
       title: "Ensō: A Streaming Interface for NIC-Application Communication"
-      url: papers/osdi-sadok.pdf
+      url: papers/osdi23-sadok.pdf
       venue: OSDI 2023
       optional: false
     - authors: Schuh et al.
