@@ -291,6 +291,11 @@
       url: https://puffer.stanford.edu/static/puffer/documents/puffer-paper.pdf
       venue: NSDI 2020
       optional: false
+    - authors: Alomar et al.
+      title: "CausalSim: A Causal Framework for Unbiased Trace-Driven Simulation"
+      url: https://www.usenix.org/system/files/nsdi23-alomar.pdf
+      venue: NSDI 2023
+      optional: false
   due:
 
 - date: 6/4/2024
