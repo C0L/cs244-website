@@ -18,7 +18,7 @@
     - authors: Leiner et al.
       title: A Brief History of the Internet
       url: papers/L2-brief-history.pdf
-      venue:
+      venue: CCR 2009
       optional: false 
   due:
     - Group formation due Monday, April 8 11:59PM
@@ -31,12 +31,12 @@
     - authors: Saltzer et al.
       title: End-to-End Arguments in System Design
       url: papers/End2EndSystemDesign.pdf
-      venue: Distributed Computing Systems, 1981.
+      venue: Distributed Computing Systems 1981
       optional: false
-    - authors:
+    - authors: Carpenter
       title: RFC 1958
       url: https://datatracker.ietf.org/doc/html/rfc1958
-      venue: 
+      venue: Network Working Group 1996
       optional: false
   due:
     
@@ -48,7 +48,7 @@
     - authors: Anderson et al.
       title: High-Speed Switch Scheduling for Local-Area Networks
       url: papers/HighSpeedSwitchScheduling.pdf
-      venue: ACM Transactions on Computer Systems
+      venue: ACM Transactions on Computer Systems 1993
       optional: false
   due:
     - Selected figure and project proposal due Monday, April 15 11:59PM
@@ -83,7 +83,7 @@
     - authors: Wetherall
       title: "Active network vision and reality: lessons from a capsule-based system"
       url: papers/wetherall.pdf
-      venue: SOSP-17
+      venue: SOSP 1999
       optional: false
     - authors: Sivaraman et al.
       title: "Packet Transactions: High-Level Programming for Line-Rate Switches"
@@ -117,12 +117,12 @@
     - authors: Jacobson and Karels
       title: Congestion Avoidance and Control 
       url: papers/CongestionControl.pdf
-      venue: 
+      venue: SIGCOMM 1988
       optional: false
-    - authors:
+    - authors: Chiu and Jain
       title: Analysis of the Increase and Decrease Algorithms for Congestion Avoidance in Computer Networks
       url: papers/cong_av.pdf
-      venue:
+      venue: Computer Networks and ISDN Systems 1989
       optional: false
   due:
 
@@ -131,15 +131,15 @@
   speakers: Keith
   slides:
   papers:
-    - authors: 
+    - authors: Brakmo and Peterson
       title: "TCP Vegas: end to end congestion avoidance on a global Internet"
       url: papers/tcp_vegas.pdf
-      venue: 
+      venue: IEEE Journal on Selected Areas in Communications 1995
       optional: false
-    - authors: 
+    - authors: Welzl and Ros
       title: A Survey of Lower-than-Best-Effort Transport Protocols
       url: https://datatracker.ietf.org/doc/html/rfc6297
-      venue:
+      venue: Internet Engineering Task Force 2011
       optional: false
   due:
 
@@ -148,10 +148,10 @@
   speakers: Keith
   slides:
   papers:
-    - authors: 
+    - authors: Cardwell et al.
       title: BBR
       url: papers/bbr.pdf
-      venue: ACM Queue
+      venue: ACM Queue 2016
       optional: false
     - authors: Arun et al.
       title: Starvation in End-to-End Congestion Control
@@ -168,12 +168,12 @@
     - authors: Paxson and Floyd
       title: "Wide area traffic: the failure of Poisson modeling"
       url: papers/paxson1995.pdf
-      venue: IEE/ACM Transactions on Networking
+      venue: IEE/ACM Transactions on Networking 1995
       optional: false
     - authors: Durumeric at al.
       title: "ZMap: Fast Internet-wide Scanning and Its Security Applications"
       url: papers/sec13-paper_durumeric.pdf
-      venue: USENIX Security
+      venue: USENIX Security 2013
       optional: false
   due:
 
@@ -183,7 +183,7 @@
   slides:
   papers:
   due:
-    - Midterm report due Monday, April 13 11:59PM
+    - Midterm report due Monday, May 13 11:59PM
 
 - date: 5/14/2024
   title: Surveillance and Privacy
@@ -220,7 +220,7 @@
       optional: false
     - authors: Sadok et al.
       title: "Ensō: A Streaming Interface for NIC-Application Communication"
-      url: papers/osdi-sadok.pdf
+      url: papers/osdi23-sadok.pdf
       venue: OSDI 2023
       optional: false
     - authors: Schuh et al.
@@ -290,6 +290,11 @@
       title: "Learning in situ: a randomized experiment in video streaming"
       url: https://puffer.stanford.edu/static/puffer/documents/puffer-paper.pdf
       venue: NSDI 2020
+      optional: false
+    - authors: Alomar et al.
+      title: "CausalSim: A Causal Framework for Unbiased Trace-Driven Simulation"
+      url: https://www.usenix.org/system/files/nsdi23-alomar.pdf
+      venue: NSDI 2023
       optional: false
   due:
 

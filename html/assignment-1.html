@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css?1" type="text/css" />
+<title>Assignment 1: Forming a Team</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Assignment 1: Forming a Team</h1>
+</div>
+<p><b>Due: Monday, April 8, 2024 at 7PM</b></p>
+<p>This quarter, you're going to try to replicate an experimental result from
+a networking research paper. We say <i>try</i> because you might not be able to! 
+Whether you can or can't, both are useful scientific results: you'll write up your results and publish
+them on the <a href="https://reproducingnetworkresearch.wordpress.com/about">Reproducing Networking Research</a> blog.
+We focus on replicating an prior result because it introduces a degree 
+of complexity and rigor which is hard to encounter in a one quarter 
+open research project.</p>
+<p>There are four major milestones to your project:</p>
+<ul>
+<li><p>Assembling a group of 3-4 people to work together throughout the quarter</p>
+</li>
+<li><p>Propose a research result that you will replicate</p>
+</li>
+<li><p>Submit a midterm report in Week 6</p>
+</li>
+<li><p>Present, write up and publish your final results</p>
+</li>
+</ul>
+<h1>Goals</h1>
+<p>When you're done with this assignment, you should have</p>
+<ul>
+<li><p>learned the difference between repeating, reproducing, and 
+replicating research results, </p>
+</li>
+<li><p>grown from a group into a team, with shared goals
+and expectations, and</p>
+</li>
+<li><p>agreed on a general topic in networking you'd like to replicate a result from.</p>
+</li>
+</ul>
+<h1>1 Repeatability, Reproducibility, and Replicability</h1>
+<p>This quarter, you'll try to replicate a prior result from a networking research paper.
+How is this different from reproducing a result, or repeating a result? The three
+terms means distinct things. Read <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">how the ACM defines the three terms</a>.</p>
+<p>In prior years, <a href="https://dl.acm.org/doi/abs/10.1145/3089262.3089266">students in CS244 spent 3 weeks reproducing a result</a>.
+We found that while this experience was valuable, with the increasing emphasis
+on reproducibility in ACM conferences achieving this, is often quite simple: 
+download some code and running a few scripts. While this is good for the research
+community generally, it doesn't give you a deeper understanding of a networking result.
+We've therefore transitioned to <i>replicating</i> results &ndash; you will re-implement
+a system based on the description in a paper and measure what you've built.</p>
+<h1>2 Form a Team</h1>
+<p><b>cribbed from Erin MacDonald</b></p>
+<p>The most important parts of a successful team are:</p>
+<ul>
+<li><p>Finding a time when everyone meets, as a group, each week, for at least two hours.</p>
+</li>
+<li><p>Having similar expectations for the course and the amount of time you will spend on it. Each student should expect to spend about five hours outside of class per week on the project.</p>
+</li>
+</ul>
+<h2>Find a Time to Meet</h2>
+<p>Compare your schedules to find a time block of at least two hours when you all
+can meet. Commit to meeting at this time each week and working together. If 
+something comes up and someone can't make it, be sure to schedule another time
+for that week.</p>
+<h2>Agree on an Area of Networking Research to Explore</h2>
+<p>Look over the programs from recent SIGCOMM, NSDI, INFOCOM, CoNEXT, Mobicom, and Mobisys
+conferences. Look at the sessions and titles of papers. The goal isn't to yet focus on
+a single paper, it's to find an area you all find interesting and would like to learn more
+about. Your next assignment will be to pick a particular result from a partcular paper
+to replicate.</p>
+<h2>Write a Charter</h2>
+<p>A team charter is a document of your own design. It should be &ldquo;artfully&rdquo; designed, 
+expressing some interests and passions of your team. Things to discuss:</p>
+<ol>
+<li><p>What are your goals for the class? Please have each member discuss individually.</p>
+</li>
+<li><p>Talk about some triumphs and challenges on past team assignments.</p>
+</li>
+<li><p>Take this <a href="https://web.archive.org/web/20220430211244/https://whatkindofdesigner.com/">quiz</a>. Discuss whether or not you agree with the classification. It will give you a starting point for discussing your interests in your project.</p>
+</li>
+</ol>
+<p>Include in the charter:</p>
+<ol>
+<li><p>Who are your team members?</p>
+</li>
+<li><p>What is your team mascot? </p>
+</li>
+<li><p>How will the team celebrate triumphs?</p>
+</li>
+<li><p>How will the team make important decisions? </p>
+</li>
+<li><p>How will the team resolve conflicts and discuss problems?</p>
+</li>
+<li><p>Leadership: What does &ldquo;leadership&rdquo; mean to your team? </p>
+</li>
+<li><p>Who is the person that hits &ldquo;submit&rdquo; on your reports and milestones? The one who crosses the &ldquo;t&rdquo;s and dots the &ldquo;i&rdquo;s? You can assign different people to be in charge of different reports and milestones, but it helps to have a clear person in charge for each one.</p>
+</li>
+<li><p>What are the skills of the team members? What special skill does everyone bring to the team?</p>
+</li>
+<li><p>When will the team meet as a group each week? Please be precise.</p>
+</li>
+<li><p>What will be the procedure for missing or being late to this meeting? How much advance notice must be given and using what method? (We recommend that last-minute text messaging is not used to inform team members that a member will be late or miss a meeting.) </p>
+</li>
+<li><p>How will you design your software so people can work independently, through stable and well-defined interfaces?</p>
+</li>
+<li><p>What area(s) of networking research will you explore?</p>
+</li>
+</ol>
+<h1>4 Handing In</h1>
+<p>Send an email to cs244-spr2324-staff@lists.stanford.edu, with
+the subject &ldquo;Team &lt;NAME&gt;&rdquo;, attaching your charter as a PDF.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-04-03 10:27:32 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

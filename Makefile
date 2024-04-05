@@ -15,8 +15,11 @@ clean:
 src/timetable_table.html: src/timetable.yaml src/timetable.py src/timetable_table.html.jinja2
 	python3 src/timetable.py src/timetable.yaml > src/timetable_table.html
 
-$(HTML)/index.html: src/index.jemdoc src/timetable_table.html
+$(HTML)/%.html: src/%.jemdoc src/timetable_table.html
 	python2.7 jemdoc.py -o $@ $<	
+
+# $(HTML)/index.html: src/index.jemdoc src/timetable_table.html
+# 	python2.7 jemdoc.py -o $@ $<	
 
 # $(HTML)/%.html: $(SRC)/%.jemdoc MENU
 # 	python2.7 jemdoc.py -o $@ $<

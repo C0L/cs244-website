@@ -412,6 +412,11 @@ table.imgtable, table.imgtable td {
     font-size: 90%;
 }
 
+#schedule .venue {
+    color: #666;
+    font-size: 90%;
+}
+
 #schedule h2 {
     border: none;
     font-size: 110%;
