@@ -214,7 +214,7 @@
   slides:
   papers:
     - authors: Neugebauer et al.
-      title: (Selected sections of) Understanding PCIe performance for end host networking 
+      title: Sections 2+3 of Understanding PCIe performance for end host networking 
       url: papers/neugebauer-sigcomm18.pdf
       venue: SIGCOMM 2018
       optional: false
