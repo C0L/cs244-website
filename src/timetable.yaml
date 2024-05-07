@@ -225,7 +225,7 @@
       optional: false
     - authors: Schuh et al.
       title: "CC-NIC: a Cache-Coherent Interface to the NIC"
-      url:
+      url: papers/shuhasplos24.pdf
       venue: ASPLOS 2024
       optional: false
   due:
