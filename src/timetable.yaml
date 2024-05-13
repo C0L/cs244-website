@@ -214,7 +214,7 @@
   slides:
   papers:
     - authors: Neugebauer et al.
-      title: Sections 2+3 of Understanding PCIe performance for end host networking 
+      title: Sections 2+3 of Understanding PCIe performance for end host networking (no critique required) 
       url: papers/neugebauer-sigcomm18.pdf
       venue: SIGCOMM 2018
       optional: false
@@ -268,23 +268,6 @@
   title: ML for Networking
   speakers: Keith
   slides:
-  papers: 
-    - authors: Sivaraman et al.
-      title: An Experimental Study of the Learnability of Congestion Control
-      url: https://cs.stanford.edu/~keithw/www/Learnability-SIGCOMM2014.pdf
-      venue: SIGCOMM 2014
-      optional: false
-    - authors: Mao et al.
-      title: Neural Adaptive Video Streaming with Pensieve
-      url: https://web.mit.edu/pensieve/content/pensieve-sigcomm17.pdf
-      venue: SIGCOMM 2017
-      optional: false
-  due:
-
-- date: 5/30/2024
-  title: ML for Networking
-  speakers: Keith
-  slides:
   papers:
     - authors: Yan et al.
       title: "Learning in situ: a randomized experiment in video streaming"
@@ -298,7 +281,7 @@
       optional: false
   due:
 
-- date: 6/4/2024
+- date: 5/30/2024
   title: Final Presentations
   speakers: You!
   slides:
@@ -306,7 +289,7 @@
   due:
     - Final report due Sat June 8th, 6:30PM
 
-- date: 6/6/2024
+- date: 6/4/2024
   title: Final Presentations
   speakers: You!
   slides:
