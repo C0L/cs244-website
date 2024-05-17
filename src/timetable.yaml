@@ -235,10 +235,10 @@
   speakers: Phil
   slides:
   papers:
-    - authors: Bicket et al.
-      title: Architecture and Evaluation of an Unplanned 802.11b Mesh Network
-      url: papers/roofnet.pdf
-      venue: MobiCom 2005
+    - authors: Aguayo et al.
+      title: Link-level Measurements from an 802.11b Mesh Network
+      url: papers/roofnet-sigcomm04.pdf
+      venue: SIGCOMM 2004 
       optional: false
     - authors: Adib and Katabi
       title: See through walls with WiFi!
