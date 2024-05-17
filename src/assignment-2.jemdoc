@@ -1,0 +1,73 @@
+= Assignment 2: Project Proposal
+
+*Due: Wednesday, April 17, 2024 at 11:59PM*
+
+In this milestone, your team will propose the research result to replicate
+in your prjoect.
+
+= 1 Questions to answer
+
+- What is the *paper* that you have selected? Please give a full
+citation that includes the names of all authors, the title, the venue
+that published it, the year of publication, and a URL.
+
+- Has the paper previously been the subject of a post on the
+reproducingnetworkingresearch blog? (Answer must be "no" unless you
+have an exception from us.)
+
+- What is the relevant *intellectual contribution* of this paper that
+you will focus on? Explain this in language that is accessible to
+somebody who has not read the paper. The goal is to explain, "what
+does the paper purport to teach the reader?"
+
+  Example: "The paper contributes a new method\/technique\/approach for
+solving the problem of A, which arises in the context of B. The new
+method\/technique\/approach is C." Or: "This paper describes an
+interesting measurement\/discovery\/finding in the area of A, which is
+important in the context of B because of C. The discovery/finding is
+reported to be D."
+
+- Before the paper arrived, what was the "status quo ante"? I.e. what
+was the state of knowledge before the paper and its intellectual
+contributions arrived? How would a well-educated reader have
+approached some problem, or what would they have said about the world,
+before learning what the paper has to teach?
+
+- What is the *result* or *claim* that you will replicate, that is
+related to the intellectual contribution you identified above?  Please
+identify a particular figure or number and cite where it is mentioned
+in the paper. Please screenshot the figure or number and include an
+excerpt in your report.
+
+- In your own words, what is the result saying? E.g., "The
+experiments found that the new method\/technique\/approach produces a
+13% improvement in convergence time compared with the best prior
+work," or "the measurements found that the distribution of TCP
+flow sizes is well-approximated by an exponential distribution
+with parameter value x."
+
+- Briefly outline the steps your team will do to *replicate* this
+result. What infrastructure or software will you take from prior work?
+What will you build by following the paper's instructions? What
+part(s)\/lines\/numbers from the figure or text that you screenshotted
+will you attempt to replicate? At a high level, how do you plan to
+divide the work between the team members?
+
+- Draw a "sketch" of what the resulting replication *might* look like.
+E.g. if you're planning to redraw two of the lines from a graph, draw
+those lines freehand just to illustrate what the result of your
+replication might be. (Okay to do this by hand.)
+
+- What are some risks to your ability to complete the replication
+project?  (What is the scariest part of your proposed plan, or the
+part most likely to fail?) What will you do as a fallback/mitigation
+in case these risks arise?
+
+- What do you plan to have done in time for the midterm
+report (May 13)?
+
+= 2 Handing In
+
+Pleaes send an email to cs244-spr2324-staff@lists.stanford.edu, with
+the subject "Team <NAME>", attaching your proposal as a PDF.
+
