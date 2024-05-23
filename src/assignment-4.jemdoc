@@ -1,0 +1,66 @@
+= Assignment 4: Blog Post and Final Presentation 
+
+*Presentations: May 30 and June 4, in class*
+*Report Due: Saturday, June 8, 2024 at 6:30PM*
+
+You've spent the past 7 weeks stiving to replicate a result from a prior
+publication. Now it's time to report on your results and share them!
+
+= 1 Presentation 
+
+Your group will give a 10 minute presentation in class. We'll randomly
+assign groups to the 2 class meetings. If you want to swap days, you'll
+need to find a group to swap with. To swap, a member from each group
+should email the staff list about the swap.
+
+You should expect that a good part of your 10 minutes is questions and
+discussion. So you should plan on presenting for 5-6 minutes. You can
+structure your presentation in any way you want. It should provide
+the following information (recall that most people in the class know
+nothing about your project!):
+
+- What paper did you focus on?
+- What is the key idea in the paper?
+- What is the graph you sought to replicate, what does it mean, and why this graph?
+- What did you do to replicate the result?
+- What were your results?
+- What do you conclude?
+
+5 minutes is not much time: you should keep the number of slides small.
+And practice! Since it only takes 5 minutes, the improvement you'll 
+see in your presentation from practice, given how important this is
+to your grade, is absolutely time well spent. Time yourself.
+
+For example, one structure might be:
+
+- Slide 1: Paper and key idea
+- Slide 2: Graph and methodology
+- Slide 3: Results
+- Slide 4: Observations
+
+= 2 Final Report (blog post)
+
+Your final report is a blog post on 
+[https://reproducingnetworkresearch.wordpress.com/about Reproducing Networking Research]. Read a few prior posts and find some that you think
+are good work you'd like to emulate; you can use their structure
+as a starting point for your own post.
+
+Your report should include:
+
+- a short introduction that explains the paper and its importance,
+- the result you chose and why,
+- the methodology described in the paper,
+- the methodology you used (and if it diverged, why),
+- the results you obtained,
+- a discussion of your process or details in replicating the result, or a discussion of why you think your results do not agree.
+
+= 3 Handing In
+
+Please send an email to cs244-spr2324-staff@lists.stanford.edu, with
+the subject "Team <NAME> Slides", attaching your slides as a PDF.
+Send this by the time when your blog post is due.
+
+To create a blog post, follow the instructions on the site;
+Keith is the contact for creating an account.
+
+
