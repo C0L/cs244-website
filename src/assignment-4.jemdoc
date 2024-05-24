@@ -20,8 +20,8 @@ the following information (recall that most people in the class know
 nothing about your project!):
 
 - What paper did you focus on?
-- What is the key idea in the paper?
-- What is the graph you sought to replicate, what does it mean, and why this graph?
+- What is the relevant intellectual contribution of this paper that you ended up focusing on?
+- What is the result or claim you sought to replicate, what does it mean, and why this one?
 - What did you do to replicate the result?
 - What were your results?
 - What do you conclude?
@@ -47,12 +47,13 @@ as a starting point for your own post.
 
 Your report should include:
 
-- a short introduction that explains the paper and its importance,
-- the result you chose and why,
+- a short introduction that explains the paper, its contributions, and their importance,
+- the result or claim you chose and why,
 - the methodology described in the paper,
 - the methodology you used (and if it diverged, why),
-- the results you obtained,
-- a discussion of your process or details in replicating the result, or a discussion of why you think your results do not agree.
+- the results you obtained, alongside the original results in a way that lets the reader usefully compare them (e.g. match graph axes if appropriate),
+- a discussion of your process or details in replicating the result, or a discussion of why you think your results do not agree,
+- anything else you've learned that you think would be useful to others trying to understand the paper in context.
 
 = 3 Handing In
 
@@ -61,6 +62,4 @@ the subject "Team <NAME> Slides", attaching your slides as a PDF.
 Send this by the time when your blog post is due.
 
 To create a blog post, follow the instructions on the site;
-Keith is the contact for creating an account.
-
-
+your CAs are the contact for creating an account.
