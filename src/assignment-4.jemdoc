@@ -43,7 +43,12 @@ For example, one structure might be:
 Your final report is a blog post on 
 [https://reproducingnetworkresearch.wordpress.com/about Reproducing Networking Research]. Read a few prior posts and find some that you think
 are good work you'd like to emulate; you can use their structure
-as a starting point for your own post.
+as a starting point for your own post. It should be in the format of posts from 2012
+or 2013, such as these
+- [https://reproducingnetworkresearch.wordpress.com/2012/06/06/why-flow-completion-time-is-the-right-metric-for-congestion-control/?csspreview=true Why Flow Completion Time is the Right Metric for Congestion Control]
+- [https://reproducingnetworkresearch.wordpress.com/2013/03/13/cs24413_dcell/ DCell: A Scalable and Fault-Tolerant Network Structure for Data Centers]
+- [https://reproducingnetworkresearch.wordpress.com/2013/03/13/cs244-13-pfabric-datacenter-packet-switching/ pFabric: Datacenter Packet Switching]
+- [https://reproducingnetworkresearch.wordpress.com/2013/03/12/cs244-13-tcp-fast-open/ TCP Fast Open]
 
 Your report should include:
 
