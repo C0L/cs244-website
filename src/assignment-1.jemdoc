@@ -1,6 +1,6 @@
 = Assignment 1: Forming a Team
 
-*Due: Monday, April 8, 2024 at 11:59PM*
+*Due: Sunday, April 6, 2024 at 11:59PM*
 
 This quarter, you're going to try to replicate an experimental result from
 a networking research paper. We say /try/ because you might not be able to! 
@@ -31,7 +31,8 @@ and expectations, and
 
 This quarter, you'll try to replicate a prior result from a networking research paper.
 How is this different from reproducing a result, or repeating a result? The three
-terms means distinct things. Read [https://www.acm.org/publications/policies/artifact-review-and-badging-current how the ACM defines the three terms].
+terms means distinct things. Read 
+[https://www.acm.org/publications/policies/artifact-review-and-badging-current how the ACM defines the three terms].
 
 In prior years, [https://dl.acm.org/doi/abs/10.1145/3089262.3089266 students in CS244 spent 3 weeks reproducing a result].
 We found that while this experience was valuable, with the increasing emphasis
@@ -89,6 +90,6 @@ Include in the charter:
 
 = 4 Handing In
 
-Send an email to cs244-spr2324-staff@lists.stanford.edu, with
+Send an email to cs244-spr2425-staff@lists.stanford.edu, with
 the subject "Team <NAME>", attaching your charter as a PDF.
 
